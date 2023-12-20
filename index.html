@@ -6,11 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto del treno DOM</title>
 
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--style-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!--javascript-->
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
-    <script src="js/script.js"></script>
+    <main class="container">
+        <section class="m-5">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Inserisci dati</h3>
+                    <hr>
+                    <div class="row row-cols-1 row-cols-3">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="kms" class="form-label">kilometri</label>
+                                <input type="number" class="form-control" id="kms" placeholder="10" min="1" max="1000">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="age" class="form-label">Età</label>
+                                <select id="age" class="form-select" id="exampleFormControlInput1" placeholder="">
+                                    <option selected value="">Adulto</option>
+                                    <option value="1">Junior</option>
+                                    <option value="2">Senior</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button class="btn btn-primary">Conferma</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="m-5  d-none"><!--d-none-->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Biglietto</h3>
+                </div>
+                <div class="card-body">
+                    <h4 id="passenger-name"></h4>
+                    <div class="row row-cols-1 row-cols-4">
+                        <div class="col">
+                            <h6>Tariffa</h6>
+                            <div id="rate"></div>
+                        </div>
+                        <div class="col">
+                            <h6>Carrozza</h6>
+                            <div id="car"></div>
+                        </div>
+                        <div class="col">
+                            <h6>Codice CP</h6>
+                            <div id="cp"></div>
+                        </div>
+                        <div class="col">
+                            <h6>Totale</h6>
+                            <div id="total"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>
