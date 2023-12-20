@@ -11,7 +11,7 @@ const passengerName = document.getElementById("passenger-name")
 const passengerRate = document.getElementById("rate")
 const passengerCar = document.getElementById("car")
 const passengerCp = document.getElementById("cp")
-const passengerPrice = document.getElementById("price")
+const passengerPrice = document.getElementById("total")
 
 //variabili
 let pricePerKms = 0.21
@@ -37,5 +37,13 @@ confirmButton.addEventListener("click", function () {
     const car = Math.floor(Math.random() * 10) + 1
     const cp = Math.floor(Math.random() * (99999 - 10000)) + 10000
 
+
+    passengerName.innerText = nameValue
+    passengerRate.innerText = rateName
+    passengerCar.innerText = car
+    passengerCp.innerText = cp
+    passengerPrice.innerText = "€" + price.toFixed(2)
+
+    ticketElements.classList.remove("d-none")
 
 })
