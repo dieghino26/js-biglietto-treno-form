@@ -34,4 +34,8 @@ confirmButton.addEventListener("click", function () {
         price = price * 0.6
     }
 
+    const car = Math.floor(Math.random() * 10) + 1
+    const cp = Math.floor(Math.random() * (99999 - 10000)) + 10000
+
+
 })
