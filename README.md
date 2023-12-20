@@ -24,3 +24,15 @@ Se non vi sentite particolarmente creativi, vi forniamo uno screenshot da seguir
 - Aggiungere il tasto annulla per riportare i campi al valore originale
 - Usare una select per inserire l'età
 - Stampare sul biglietto un numero di carrozza e un numero di biglietto casuali
+
+<hr>
+
+## Procedimento
+
+
+- recuperare i valori dal form
+- calcolare il prezzo del biglietto
+- applicare lo sconto se idoneo
+- calcolo del prezzo definitivo arrotondato a 2 decimali
+- aggiunta dei valori al biglietto 
+- rivelazione del biglietto
