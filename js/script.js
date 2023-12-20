@@ -17,3 +17,21 @@ const passengerPrice = document.getElementById("price")
 let pricePerKms = 0.21
 let rateName = "Tariffa Ordinaria"
 
+confirmButton.addEventListener("click", function () {
+    const nameValue = nameField.value.trim()
+    const kmsValue = parseInt(kmsField.value)
+    const ageValue = ageField.value.trim()
+
+
+    let price = pricePerKms * kmsValue
+
+
+    if (ageValue === "junior") {
+        rateName = "Tariffa Junior"
+        price = price * 0.8
+    } else if (ageValue === "senior") {
+        rateName = "Tariffa Senior"
+        price = price * 0.6
+    }
+
+})
